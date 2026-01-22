@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sai Teja Salvaji | Portfolio</title>
+
+<style>
+:root{
+    --bg:#020617;
+    --panel:#0f172a;
+    --card:#020617;
+    --border:#1e293b;
+    --text:#e5e7eb;
+    --muted:#94a3b8;
+    --accent:#38bdf8;
+    --accent2:#6366f1;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body{
+    background:
+        radial-gradient(800px circle at 10% 10%, #0f172a, transparent 40%),
+        radial-gradient(600px circle at 90% 20%, #1e3a8a, transparent 35%),
+        var(--bg);
+    color:var(--text);
+    line-height:1.7;
+}
+
+/* GLOBAL */
+.container{
+    max-width:1150px;
+    margin:auto;
+    padding:0 24px;
+}
+
+section{
+    padding:90px 0;
+}
+
+/* HERO */
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+}
+
+.hero h1{
+    font-size:3.4rem;
+    font-weight:700;
+    letter-spacing:-1px;
+}
+
+.hero span{
+    background:linear-gradient(90deg,var(--accent),var(--accent2));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+    max-width:650px;
+    margin-top:18px;
+    color:var(--muted);
+    font-size:1.1rem;
+}
+
+.hero .actions{
+    margin-top:35px;
+}
+
+.hero a{
+    text-decoration:none;
+    margin-right:15px;
+    padding:12px 28px;
+    border-radius:30px;
+    font-weight:600;
+}
+
+.btn-primary{
+    background:linear-gradient(90deg,var(--accent),var(--accent2));
+    color:black;
+}
+
+.btn-outline{
+    border:1px solid var(--border);
+    color:var(--text);
+}
+
+/* SECTION HEADINGS */
+h2{
+    font-size:2rem;
+    margin-bottom:35px;
+    position:relative;
+}
+
+h2::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    width:60px;
+    height:3px;
+    background:linear-gradient(90deg,var(--accent),var(--accent2));
+    border-radius:2px;
+}
+
+/* ABOUT */
+.about p{
+    max-width:850px;
+    color:var(--muted);
+    font-size:1.05rem;
+}
+
+/* SKILLS */
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+    gap:20px;
+}
+
+.skill{
+    background:linear-gradient(180deg,#020617,#020617) padding-box,
+               linear-gradient(120deg,#1e293b,#334155) border-box;
+    border:1px solid transparent;
+    border-radius:14px;
+    padding:18px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.skill:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 40px rgba(56,189,248,0.15);
+}
+
+/* PROJECTS */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:28px;
+}
+
+.project{
+    background:linear-gradient(180deg,#020617,#020617) padding-box,
+               linear-gradient(120deg,#1e293b,#334155) border-box;
+    border:1px solid transparent;
+    border-radius:18px;
+    padding:28px;
+    transition:0.35s;
+}
+
+.project:hover{
+    transform:translateY(-8px);
+    box-shadow:0 25px 60px rgba(99,102,241,0.18);
+}
+
+.project h3{
+    background:linear-gradient(90deg,var(--accent),var(--accent2));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin-bottom:10px;
+}
+
+.project p{
+    color:var(--muted);
+    font-size:0.95rem;
+}
+
+/* TIMELINE */
+.timeline{
+    border-left:3px solid var(--border);
+    padding-left:30px;
+}
+
+.entry{
+    margin-bottom:30px;
+}
+
+.entry h4{
+    color:var(--accent);
+}
+
+.entry span{
+    color:var(--muted);
+    font-size:0.9rem;
+}
+
+/* CONTACT */
+.contact p{
+    color:var(--muted);
+    margin:8px 0;
+}
+
+/* FOOTER */
+footer{
+    padding:35px 0;
+    text-align:center;
+    color:var(--muted);
+    border-top:1px solid var(--border);
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <h1>Sai Teja <span>Salvaji</span></h1>
+        <p>
+            Developer • Data Science Student • Visual Storyteller  
+            Building systems, insights, and experiences with precision and intent.
+        </p>
+        <div class="actions">
+            <a href="#projects" class="btn-primary">View Projects</a>
+            <a href="#contact" class="btn-outline">Contact</a>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section>
+    <div class="container about">
+        <h2>About</h2>
+        <p>
+            I focus on creating reliable systems, data-driven applications,
+            and clean digital interfaces. My approach blends engineering
+            fundamentals with visual clarity — ensuring every product
+            communicates purpose and value.
+        </p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section>
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">HTML & CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React.js</div>
+            <div class="skill">Node.js</div>
+            <div class="skill">Python</div>
+            <div class="skill">C++</div>
+            <div class="skill">Data Science</div>
+            <div class="skill">Video Editing</div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="projects">
+
+            <div class="project">
+                <h3>Student Event Management Portal</h3>
+                <p>
+                    Full-stack platform for event creation, registrations,
+                    and role-based workflows with secure authentication.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Advertising Insights Dashboard</h3>
+                <p>
+                    Analytical dashboard delivering performance insights
+                    using interactive data visualizations.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Online Book Store</h3>
+                <p>
+                    Modular academic project using HTML frames to separate
+                    navigation, content, and footer layouts.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- JOURNEY -->
+<section>
+    <div class="container">
+        <h2>Journey</h2>
+        <div class="timeline">
+            <div class="entry">
+                <h4>B.Tech — Computer Science (Data Science)</h4>
+                <span>VNR VJIET • 2023 – 2027</span>
+            </div>
+            <div class="entry">
+                <h4>Founder — Learning Initiative</h4>
+                <span>Academic mentoring & aptitude training</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="container contact">
+        <h2>Contact</h2>
+        <p>Email: saiteja@email.com</p>
+        <p>GitHub: github.com/SaiTejaSalvaji</p>
+        <p>Instagram: @fusion__flicks</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Sai Teja Salvaji
+</footer>
+
+</body>
+</html>
